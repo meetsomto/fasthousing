@@ -54,6 +54,13 @@ h6 {
     border-bottom-left-radius: initial;
 }
 
+@media (min-width: 758px) {
+    .media-no-border-radius-left {
+        border-radius: 0rem .25rem .25rem 0rem;
+    }
+}
+
+
 .border-orange {
     border: 2px solid orange;
 }
@@ -152,77 +159,73 @@ nav.navbar {
     padding: 3% 15% 7%;
 }
 
-
-.navbar-brand {
-    padding-left: 1%;
-}
-
-@media (min-width: 575px) and (max-width: 1300px) {
-    .navbar-brand {
-        max-width: 60rem;
-    }
-}
-
-
-
-@media (max-width: 574px) {
-    .navbar-brand {
-        max-width: 38rem;
-    }
-
-    .nav-logo {
-        max-width: 35% !important;
-    }
-}
-
-
-.nav-logo {
-    max-width: 15%;
-}
-
-@media (min-width: 457px) and (max-width: 574px) {
-    .mtop-nav-search {
-        margin-top: 0.5rem !important;
-    }
-}
-
-
-@media (max-width: 1300px) {
-    .mtop-nav-search {
-        margin-top: 0.5rem !important;
-    }
-}
-
-@media (min-width: 1301px) {
-    .mtop-nav-search {
-        margin-top: 1rem !important;
-    }
-}
-
-
-@media (max-width: 666px) {
-    .search-placeholder {
-        font-size: smaller;
-    }
-}
-
-@media (max-width: 412px) {
-    .search-placeholder {
-        font-size: xx-small;
-    }
-}
-
-.search-height {
-    max-height: 2.4rem;
-}
-
-
 .navbar-header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
 
+/*Logo*/
+.nav__logo {
+    max-width: 10rem;
+}
+
+
+@media (max-width: 405px) {
+    .nav__logo {
+        max-width: 6rem !important;
+    }
+
+    .search-placeholder {
+        font-size: x-small;
+        padding-left: 0.2rem;
+    }
+}
+
+
+/*Top nav items*/
+@media (min-width: 405px) {
+    .search-placeholder {
+        margin-top: 0.1rem;
+    }
+}
+
+@media (min-width: 630px) {
+    .nav__search {
+        margin-left: 10rem !important;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 850px) {
+    .nav__search {
+        margin-left: 17rem !important;
+    }
+}
+
+@media (min-width: 851px) and (max-width: 991px) {
+    .nav__search {
+        margin-left: 24rem !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1100px) {
+    .nav__search {
+        margin-left: 3rem !important;
+    }
+}
+
+@media (min-width: 1101px) and (max-width: 1349px) {
+    .nav__search {
+        margin-left: 8rem !important;
+    }
+}
+
+
+@media (min-width: 1350px) {
+    .nav__search {
+        margin-left: 23rem !important;
+    }
+}
 
 .nav-item {
     padding: 0 18px;
@@ -274,6 +277,13 @@ nav.navbar {
         min-width: 22rem;
     }
 }
+
+@media (max-width: 670px) {
+    .center-search-margin {
+        margin: auto !important;
+    }
+}
+
 
 .orange-text {
     color: #fe7929;
